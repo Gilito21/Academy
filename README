@@ -1,1 +1,37 @@
+# Close The Gap Academy
 
+A Django-powered learning platform that lets administrators upload video lessons organised into purchasable modules with quizzes at the end of each module. Learners can create accounts, buy access to modules, watch lessons, and take the module assessments.
+
+## Getting started
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Apply database migrations:
+   ```bash
+   python manage.py migrate
+   ```
+3. Create a superuser to access the admin dashboard (optional but recommended):
+   ```bash
+   python manage.py createsuperuser
+   ```
+4. Run the development server:
+   ```bash
+   python manage.py runserver 0.0.0.0:8000
+   ```
+
+The site will be available at http://localhost:8000.
+
+## Running tests
+
+```bash
+python manage.py test
+```
+
+## Key features
+
+- Admin interface for managing modules, lessons (with video uploads), and quizzes.
+- User registration and authentication.
+- Module purchase flow that grants access to lessons and quizzes.
+- Quiz grading with passing thresholds and dashboard summaries.

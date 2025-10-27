@@ -1,0 +1,50 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.module-card {
+  border: none;
+  box-shadow: 0 0.75rem 1.5rem rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.module-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.12);
+}
+
+.module-card__image-wrapper {
+  position: relative;
+}
+
+.module-card__image {
+  height: 220px;
+  object-fit: cover;
+}
+
+.module-card__image--placeholder {
+  height: 220px;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.module-card__placeholder-text {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.module-card__badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.module-hero__placeholder {
+  min-height: 280px;
+  background: radial-gradient(circle at top, rgba(37, 99, 235, 0.15), rgba(37, 99, 235, 0));
+  border: 1px dashed rgba(148, 163, 184, 0.6);
+  color: #1f2937;
+}
